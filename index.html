@@ -11,27 +11,22 @@
 <body>
     
     <div class="content-wrapper">
-
         <header>
-
             <h1 class="Logo"><div class="color">Fantasy</div>books</h1>
 
             <input type="checkbox" class="menu-btn">
             <img src="img/baseline-menu-24px.svg" alt="Menu" class="menu">
             
             <nav>
-
                 <ul>
                     <li><a href="#">Bogklub</li></a>
                     <li><a href="#">Top 10</li></a>
                     <li><a href="#">Secondshand</li></a>
+                    <li><button class="make-account">Opret Bruger</button></li>
                 </ul>
-
             </nav>
-
-            <button class="make-account">Opret Bruger</button>
-
         </header>
+
 
         <main>
 
@@ -54,19 +49,22 @@
                     <a href="#">Vis flere<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"/></svg></a>
                 </header>
 
-                <article class="bookcover">
-                    <a href="#"><img class="cover" src="secondhand/HarryPotterOgDeVisesSten.png" alt="Harry Potter og De Vises Sten"></a>
-                </article>
-                <article class="bookcover">
-                    <a href="#"><img class="cover" src="secondhand/HarryPotterOgFangenFraAzkaban.png" alt="Harry Potter og Fangen fra Azkaban"></a>
-                </article>
-                <article class="bookcover">
-                    <a href="#"><img class="cover" src="secondhand/MortalEnginesDeRullendeByer.png" alt="Mortal Engines - De Rullende Byer"></a>
-                </article>
-                <article class="bookcover">
-                    <a href="#"><img class="cover" src="secondhand/Vildheks2ViridiansBlod.png" alt="Vildheks 2 - Viridians Blod"></a>
-                </article>
+                <div class="books">
+                    <article class="bookcover">
+                        <a href="#"><img class="cover" src="secondhand/HarryPotterOgDeVisesSten.png" alt="Harry Potter og De Vises Sten"></a>
+                    </article>
+                    <article class="bookcover">
+                        <a href="#"><img class="cover" src="secondhand/HarryPotterOgFangenFraAzkaban.png" alt="Harry Potter og Fangen fra Azkaban"></a>
+                    </article>
+                    <article class="bookcover">
+                        <a href="#"><img class="cover" src="secondhand/MortalEnginesDeRullendeByer.png" alt="Mortal Engines - De Rullende Byer"></a>
+                    </article>
+                    <article class="bookcover">
+                        <a href="#"><img class="cover" src="secondhand/Vildheks2ViridiansBlod.png" alt="Vildheks 2 - Viridians Blod"></a>
+                    </article>
+                </div>
             </section>
+
 
             <section class="book-of-the-month">
                 <article class="info">
@@ -80,28 +78,34 @@
                 </article>
 
                 <article class="overview">
-                    <img class="cover" src="secondhand/HarryPotterOgDeVisesSten.png" alt="Harry Potter og De Vises Sten">
-                    <h1>Harry Potter og De Vises Sten</h1>
-                    <div class="writer">
-                        <p>Forfatter</p>
-                        <h4>J.K. Rowling</h4>
-                    </div>
-                    <div class="type">
-                        <p>Type</p>
-                        <h4>Fantasy, Alle aldre</h4>
-                    </div>
-                    <p>Her kan du læse et kort resumé af bogen, samt få vores oplevelser
-                        både med bogen og med filmen.
+                    <a href="#"><img class="cover" src="secondhand/HarryPotterOgDeVisesSten.png" alt="Harry Potter og De Vises Sten"></a>
+                    <div class="text">
+                        <a href="#"><h1>Harry Potter og De Vises Sten</h1></a>
+                        <div class="book-info">    
+                            <div class="writer">
+                                <p>Forfatter</p>
+                                <h4>J.K. Rowling</h4>
+                            </div>
+                            <div class="type">
+                                <p>Type</p>
+                                <h4>Fantasy, Alle aldre</h4>
+                            </div>
+                        </div>
+                    <p>Her kan du læse et kort resumé af bogen, samt få vores oplevelser            
+                    både med bogen og med filmen.
                     </p>
                     <button class="order">Bestil bog</button>
+                    </div>
                 </article>
             </section>
+
 
             <section class="bookclub">
                 <button class="sign-up">Tilmeld mig bogklubben</button>
             </section>
-
+            
         </main>
+
 
         <footer>
             <div class="fantasybooks">
@@ -138,10 +142,8 @@
 
 
 
-
-
-
     </div>
+
 
 
 

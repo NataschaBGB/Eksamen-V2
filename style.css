@@ -3,10 +3,6 @@ body {
     margin: 0;
     background-color: #FFF7F3;
 }
-.content-wrapper {
-    max-width: 1200px;
-    margin: auto;
-}
 
 .cover, button {
     box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.3);
@@ -45,13 +41,11 @@ header nav ul li a {
 }
 header .make-account {
     align-self: center;
-    height: min-content;
     border-radius: 999px;
     color: #FE7D4E;
     background-color: #FFECE5;
-    padding: 10px 20px;
+    padding: 15px 40px;
     border:none;
-    margin-right: 50px;
     box-shadow: none;
     cursor: pointer;
 }
@@ -201,6 +195,7 @@ main .bookclub .sign-up {
 footer {
     margin-top: 50px;
     text-align: center;
+    background-color: #FEFDF9;
 }
 footer h3 {
     display: flex;
@@ -225,4 +220,119 @@ footer .front-img {
 }
 footer .front-img img {
     max-width: 100%;
+}
+
+
+
+
+
+/* PHONE STYLING */
+@media screen and (min-width:720px) {
+    
+    a {
+        margin: 0;
+        padding: 0%;
+    }
+    .content-wrapper {
+        max-width: 1200px;
+        margin: auto;
+    }
+    main .book-of-the-month .content-wrapper {
+        display: flex;
+    }
+
+    /* header styling */
+    header .menu {
+        display: none; /* hamburger menu icon is not displayed in desktop version */
+    }
+    header .menu-btn {
+        display: none; /* hamburger menu icon is not displayed in desktop version */
+    }
+
+    header {
+        align-items: center;
+        justify-content: space-around;
+    }
+    header nav {
+        display: flex;
+    }
+    header nav ul {
+        flex-direction: row;
+        padding: 0%;
+    }
+    header nav ul li {
+        margin: 10px;
+        align-self: center;
+    }
+
+
+    /* MAIN STYLING */
+
+    /* main .hero styling */
+    main .hero article {
+        display: flex;
+        align-items: center;
+        max-width: 50%;
+        font-size: 1.3em;
+        height: 60vh;
+    }
+
+    /* main .secondhand styling */
+    main .secondhand {
+        padding:10px 50px;
+    }
+    main .secondhand .secondhand-top {
+        justify-content: space-between;
+    }
+    main .secondhand .books {
+        display: flex;
+        justify-content: space-between;
+        gap:60px;
+    }
+    main .secondhand .books .bookcover img {
+        max-width: 100%;
+    }
+
+    /* main .book-of-the-month styling */
+    main .book-of-the-month {
+        display: flex;
+        margin: 100px 0px;
+        height: 50vh;
+    }
+    main .book-of-the-month .info {
+        max-width: 20%;
+        padding: 60px 50px;
+        text-align: start;
+    }
+    main .book-of-the-month .overview {
+        display: flex;
+        padding: 60px 50px 60px 80px;
+        text-align: left;
+    }
+    main .book-of-the-month .overview a {
+        text-decoration: none;
+        color: #543D32;
+        font-size: 1.3em;
+    }
+    main .book-of-the-month .overview img {
+        height: 100%;
+    }
+    main .book-of-the-month .overview .text {
+        margin-left: 80px;
+    }
+    main .book-of-the-month .overview .book-info {
+        display: flex;
+        gap: 40px;
+    }
+    main .book-of-the-month .overview .order {
+        
+    }
+
+
+
+
+
+    
+
+
 }
