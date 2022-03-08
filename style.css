@@ -1,0 +1,228 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #FFF7F3;
+}
+.content-wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cover, button {
+    box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border: none;
+}
+
+/* header styling */
+header {
+    background-color: #FFF7F3;
+    display: flex;
+    justify-content: space-around;
+}
+header h1 {
+    display: flex;
+}
+header h1 .color {
+    color: #FE7D4E;
+}
+header nav {
+    display: none;
+}
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 20px 40px;
+    background-color: #FFF7F3;
+}
+header nav ul li {
+    margin: 20px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #543D32;
+}
+header .make-account {
+    align-self: center;
+    height: min-content;
+    border-radius: 999px;
+    color: #FE7D4E;
+    background-color: #FFECE5;
+    padding: 10px 20px;
+    border:none;
+    margin-right: 50px;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+
+/* menu button styling */
+header .menu {
+    position:absolute;
+    top:5px;
+    right:10px;
+    height: 45px;
+    width: 45px;
+}
+header .menu-btn {
+    position: absolute;
+    top:5px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    opacity: 0;
+    cursor:pointer;
+}
+header .menu-btn:checked ~ nav {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    right:0px;
+}
+
+
+/* MAIN STYLING */
+
+/* section .hero styling */
+main .hero {
+    background-image: linear-gradient(rgba(16, 15, 17, 0.5), rgba(22, 20, 20, 0.5)), url(img/hero\ image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+main .hero article {
+    margin: auto;
+    padding: 3em 2em;
+}
+
+
+/* section .secondhand styling */
+main .secondhand {
+    text-align: center;
+    color: #543D32;
+    margin: 50px 0px;
+}
+main .secondhand .secondhand-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .secondhand .secondhand-top a {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    text-decoration: none;
+    color: #543D32;
+}
+/* main .secondhand .secondhand-top a:hover {
+
+} */
+main .secondhand .secondhand-top svg {
+    max-width: 30px;
+}
+main .secondhand .bookcover {
+    padding: 20px 0px;
+}
+
+
+/* section .book-of-the-month styling */
+main .book-of-the-month {
+    text-align: center;
+}
+main .book-of-the-month p {
+    color:#707070;
+}
+main .book-of-the-month .info {
+    text-align: center;
+    background-color: #FEFDF9;
+    padding: 20px 10px;
+}
+main .book-of-the-month .info h2 {
+    color: #543D32;
+}
+main .book-of-the-month .info a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#543D32;
+    text-decoration: none;
+}
+main .book-of-the-month .info svg {
+    max-width: 30px;
+}
+
+main .book-of-the-month .overview {
+    background-color: #FEF2F2;
+    padding: 40px 0px;
+}
+main .book-of-the-month .overview h1 {
+    color:#543D32;
+}
+main .book-of-the-month .overview .writer p,
+main .book-of-the-month .overview .type p {
+    font-size:small;
+    margin: 0;
+}
+main .book-of-the-month .overview .writer h4,
+main .book-of-the-month .overview .type h4 {
+    color:#543D32;
+    margin-top: 10px;
+}
+main .book-of-the-month .overview .order {
+    border-radius: 999px;
+    background-color: #FE7D4E;
+    color:white;
+    padding:15px 50px;
+}
+
+
+/* section .bookclub styling */
+main .bookclub {
+    background-image:url(img/Cover-Bogklub.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: left;
+}
+main .bookclub .sign-up {
+    background-color: #FE7D4E;
+    color: white;
+    border-radius: 999px;
+    padding: 15px 40px;
+    margin: 50px 20px;
+}
+
+
+/* footer styling */
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+footer h3 {
+    display: flex;
+    justify-content: center;
+}
+footer h3 .color {
+    color: #FE7D4E;
+}
+footer h4 {
+    margin: 25px 0px 5px 0px;
+}
+footer p {
+    color: #707070;
+    margin: 0;
+}
+footer .SoMe .some-img {
+    width: 40px;
+    fill: #FE7D4E;
+}
+footer .front-img {
+    margin: 0;
+}
+footer .front-img img {
+    max-width: 100%;
+}
