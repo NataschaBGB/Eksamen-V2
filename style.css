@@ -167,7 +167,9 @@ main .book-of-the-month .info a {
     color:#543D32;
     text-decoration: none;
     font-size: larger;
-
+}
+main .book-of-the-month .info a:hover {
+    text-decoration: underline;
 }
 main .book-of-the-month .info svg {
     max-width: 30px;
@@ -181,6 +183,9 @@ main .book-of-the-month .overview a {
     color:#543D32;
     text-decoration: none;
     font-size: 1.6em;
+}
+main .book-of-the-month .overview a:hover {
+    text-decoration: underline;
 }
 main .book-of-the-month .overview .writer p,
 main .book-of-the-month .overview .type p {
@@ -268,6 +273,69 @@ footer .front-img img {
         padding: 0%;
     }
 
+    /* MAIN STYLING */
+
+    /* main .secondhand styling */
+    main .secondhand {
+        padding:10px 50px;
+    }
+    main .secondhand .secondhand-top {
+        justify-content: space-between;
+        margin: auto;
+    }
+    main .secondhand .books {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:20px;
+    }
+    main .secondhand .books .bookcover img {
+        max-width: 100%;
+    }
+
+    /* main .book-of-the-month styling */
+    main .book-of-the-month {
+        display: flex;
+        margin-bottom: 100px;
+    }
+    main .book-of-the-month .info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0px 50px;
+    }
+    main .book-of-the-month .overview {
+        width: 50%;
+        padding: 40px 50px;
+    }
+    main .book-of-the-month .overview .text {
+        display:none;
+    }
+
+    /* main .bookclub styling */
+    main .bookclub {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+        margin-bottom: 100px;
+    }
+
+    /* footer styling */
+    footer .info-wrapper {
+        display: flex;
+        justify-content: center;
+        gap:100px;
+        margin-bottom: 50px;
+    }
+    footer .info-wrapper .second-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
 }
 
@@ -333,6 +401,7 @@ footer .front-img img {
     main .secondhand .books {
         display: flex;
         justify-content: space-between;
+        flex-wrap: nowrap;
         gap:60px;
     }
     main .secondhand .books .bookcover img {
@@ -374,7 +443,7 @@ footer .front-img img {
     }
 
     main .book-of-the-month .overview img {
-        height: 100%;
+        max-height: 100%;
     }
     main .book-of-the-month .overview .text {
         display: flex;
@@ -418,6 +487,10 @@ footer .front-img img {
         justify-content: space-between;
         padding: 0px 0px 0px 100px;
         font-size:0.9em;
+    }
+    footer .info-wrapper {
+        display: flex;
+        gap: 150px;
     }
     footer .fantasybooks {
         align-self: center;
