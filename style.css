@@ -355,6 +355,7 @@ footer .front-img img {
         margin: auto;
     }
 
+
     /* header styling */
     header .menu {
         display: none; /* hamburger menu icon is not displayed in desktop version */
@@ -378,6 +379,25 @@ footer .front-img img {
         margin: 10px;
         align-self: center;
     }
+    header nav ul li a {
+        border: 2px solid transparent;
+        border-radius: 999px;
+        padding: 5px 15px;
+    }
+    header nav ul li a:hover {
+        animation-name: nav-li;
+        animation-duration: 400ms;
+        animation-fill-mode: forwards;
+    }
+    header nav ul li .make-account {
+        border: 2px solid transparent;
+    }
+    header nav ul li .make-account:hover {
+        animation-name: nav-btn;
+        animation-duration: 400ms;
+        animation-fill-mode: forwards;
+    }
+
 
 
     /* MAIN STYLING */
@@ -406,7 +426,12 @@ footer .front-img img {
     }
     main .secondhand .books .bookcover img {
         max-width: 100%;
+        border: 2px solid rgba(105, 105, 105, 0.3);
     }
+    main .secondhand .books .bookcover img:hover {
+        border: 2px solid #FE7D4E;
+    }
+    
 
     /* main .book-of-the-month styling */
     main .book-of-the-month {
@@ -436,12 +461,17 @@ footer .front-img img {
         display: flex;
         padding: 60px 100px 60px 80px;
         text-align: left;
-     }
+        width: 85%;
+    }
     main .book-of-the-month .overview a h1 {
         text-decoration: none;
         color: #543D32;
     }
-
+    main .book-of-the-month .overview a h1:hover {
+        animation-name: skew;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
     main .book-of-the-month .overview img {
         max-height: 100%;
     }
@@ -463,6 +493,11 @@ footer .front-img img {
     main .book-of-the-month .overview .order {
         max-width: fit-content;
     }
+    main .book-of-the-month .overview .order:hover {
+        animation-name: month;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
+    }
 
 
     /* section .bookclub styling */
@@ -470,14 +505,18 @@ footer .front-img img {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-size: cover;
-        background-position: center;
+        background-size: contain;
         height: 50vh;
         margin-bottom: 100px;
     }
     main .bookclub .sign-up {
         max-width: max-content;
         max-height:4em;
+    }
+    main .bookclub  .sign-up:hover {
+        animation-name: bookclub;
+        animation-duration: 200ms;
+        animation-fill-mode: forwards;
     }
 
 
@@ -509,6 +548,36 @@ footer .front-img img {
     }
     footer .front-img {
         max-width: 45%;
+    }
+
+
+    /* KEYFRAMES - ANIMATIONS */
+    @keyframes bookclub {
+        from {font-size: 1.2em;}
+        to {font-size: 2em;}
+    }
+    @keyframes skew {
+        0% {transform: skew(0deg, 0deg);}
+        25% {transform: skew(-3deg, -3deg);}
+        50% {transform: skew(3deg, 3deg);}
+        75% {transform: skew(-3deg, -3deg);}
+        100% {transform: skew(0deg, 0deg);}
+    }
+    @keyframes month {
+        from {box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.3);}
+        to {box-shadow: 0px 0px 4px 4px rgba(245, 92, 3, 0.986);}
+    }
+    @keyframes nav-li {
+        from {border: 2px solid transparent;
+            border-radius: 999px;
+            padding: 5px 15px;}
+        to {border: 2px solid #FE7D4E;
+            border-radius: 999px;}
+    }
+    @keyframes nav-btn {
+        from {color:#FE7D4E;}
+        to {color:#c03807;
+            border:2px solid #c03807;}
     }
 
 
